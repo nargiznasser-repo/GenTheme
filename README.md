@@ -1,0 +1,2 @@
+# GenTheme
+Shopify Theme Basic
