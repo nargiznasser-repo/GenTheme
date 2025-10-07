@@ -1,0 +1,20 @@
+<html>
+  <head>
+    {% comment %} page_title is the title object  {% endcomment %}
+    <title>{{ page_title }}</title>
+    {% comment %}
+      allows shopify to insert its own scripts for analytics, bootstrap,
+      hot reload, and other store configs
+    {% endcomment %}
+    {{ content_for_header }}
+
+    <link rel="stylesheet" href="{{'theme.css' | asset_url}}">
+  </head>
+
+  <body>
+    {% comment %} insert header.liquid in here {% endcomment %}
+    {% render 'header' %}
+    {% comment %} insert product.liquid template file in here {% endcomment %}
+    {{ content_for_layout }}
+  </body>
+</html>

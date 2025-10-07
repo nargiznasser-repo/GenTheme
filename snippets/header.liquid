@@ -1,0 +1,26 @@
+
+
+<script>
+  fetch(`/shop.js`).then(res => res.json()).then(brand => {
+      console.log(brand);
+     });
+  </script>
+
+<header class="ecom-header">
+  <div class="ecom-logo">
+      <img src="{{ shop.brand.logo | image_url: width: '400' }}" alt="{{ shop.brand.slogan }}" width="120" height="48">
+  </div>
+  <nav class="ecom-nav">
+  {% for link in linklists.main-menu.links %}
+    <a href="{{ link.url }}">{{ link.title }}</a>
+  {% endfor %}
+</nav>
+  <div class="ecom-cart">
+    <a href="/cart">
+      🛒 Cart
+      {% if cart.item_count > 0 %}
+        <span>({{ cart.item_count }})</span>
+      {% endif %}
+    </a>
+  </div>
+</header>

@@ -1,0 +1,36 @@
+
+.ecom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.ecom-logo {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.ecom-nav {
+  display: flex;
+  gap: 32px;
+}
+.ecom-nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.ecom-nav a:hover {
+  color: #2d7a46;
+}
+.ecom-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #222;
+}
