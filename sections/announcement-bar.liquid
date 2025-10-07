@@ -1,0 +1,52 @@
+<style>
+.announcement-bar {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  padding: 12px 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
+}
+</style>
+
+<div
+  class="announcement-bar"
+  style="
+    background: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+  "
+>
+  {{ section.settings.text }}
+</div>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Announcement Text",
+      "default": "Welcome to our store! Free shipping on all orders."
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#2d7a46"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
+}
+{% endschema %}

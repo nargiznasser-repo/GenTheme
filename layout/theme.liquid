@@ -12,8 +12,10 @@
   </head>
 
   <body>
-    {% comment %} insert header.liquid in here {% endcomment %}
-    {% render 'header' %}
+    {% comment %} insert sections/header.liquid in here {% endcomment %}
+    {% section 'header' %}
+    {% comment %} if i wanted to insert snippets/header.liquid, should have used render 'header' instead {% endcomment %}
+
     {% comment %} insert product.liquid template file in here {% endcomment %}
     {{ content_for_layout }}
   </body>
