@@ -61,7 +61,7 @@
     {{ featured_collection.title }}
   </h1>
   <div class="collection-grid">
-    {% for product in featured_collection.products %}
+    {% for product in featured_collection.products limit: section.settings.products_to_show %}
       <div class="collection-product-card">
         <img
           class="collection-product-image"
