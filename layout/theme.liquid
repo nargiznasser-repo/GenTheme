@@ -8,6 +8,15 @@
     {% endcomment %}
     {{ content_for_header }}
 
+    {% style %}
+       {{ settings.heading_font | font_face : font_display: 'swap' }}
+       {{ settings.body_font | font_face : font_display: 'swap'}} 
+      : root {
+        --heading-font: {{ settings.heading_font.family | escape }};
+        --body-font: {{ settings.body_font.family | escape }};
+        --button-color: {{ settings.color_buttons }};
+      }
+    {% endstyle %}
     <link rel="stylesheet" href="{{'theme.css' | asset_url}}">
   </head>
 

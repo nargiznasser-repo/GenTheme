@@ -1,5 +1,5 @@
 [
-    {
+  {
     "name": "theme_info",
     "theme_name": "Horizon",
     "theme_version": "3.0.0",
@@ -7,11 +7,38 @@
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
-    {
-    "name" : "them_gen",
-    "settings": [{
-        "type": "header",
-        "content": "Theme Settings"
-    }]
-    }
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "heading_font",
+        "label": "Heading Font",
+        "default": "work_sans_n4"
+      },
+      {
+        "type": "font_picker",
+        "id": "body_font",
+        "label": "Body Font",
+        "default": "lato_n4"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_buttons",
+        "label": "Button color",
+        "default": "#2d7a46"
+      },
+      {
+        "type": "color",
+        "id": "color_buttons_text",
+        "label": "Button text color",
+        "default": "#ffffff"
+      }
+    ]
+  }
 ]
