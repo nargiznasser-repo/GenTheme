@@ -1,0 +1,83 @@
+<style>
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 48px auto 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+.hero-bg-image {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 32px;
+  max-width: 600px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.hero-btn {
+  background: #2d7a46;
+  color: #fff;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.hero-btn:hover {
+  background: #226034;
+}
+@media (max-width: 900px) {
+  .hero-title { font-size: 2rem; }
+  .hero-section { min-height: 320px; }
+  .hero-content { padding: 40px 8px; }
+}
+</style>
+
+<section class="hero-section">
+  <img class="hero-bg-image" width="full" height="full"
+    src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80" 
+    alt="Shop the latest products">
+  <div class="hero-content">
+    <h1 class="hero-title">Discover Your Next Favorite Product</h1>
+    <p class="hero-subtitle">
+      Shop the latest trends and enjoy exclusive deals. Fast shipping, easy returns, and top-rated customer service—everything you need for a seamless shopping experience!
+    </p>
+    <a href="/collections/all" class="hero-btn">Shop Now</a>
+  </div>
+</section>
