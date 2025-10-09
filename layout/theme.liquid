@@ -11,7 +11,7 @@
     {% style %}
        {{ settings.heading_font | font_face : font_display: 'swap' }}
        {{ settings.body_font | font_face : font_display: 'swap'}} 
-      : root {
+      :root {
         --heading-font: {{ settings.heading_font.family | escape }};
         --body-font: {{ settings.body_font.family | escape }};
         --button-color: {{ settings.color_buttons }};
