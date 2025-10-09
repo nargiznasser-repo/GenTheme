@@ -1,5 +1,30 @@
-// store the data for the settings we create in settings_schema.json
-
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    
+  "current": {
+    "heading_font": "archivo_black_n4",
+    "color_buttons": "#7c1080",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {}
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "text": "Welcome to our store! Free shipping on all orders.",
+          "bg_color": "#2d7a46",
+          "text_color": "#ffffff"
+        }
+      }
+    },
+    "content_for_index": []
+  }
 }
