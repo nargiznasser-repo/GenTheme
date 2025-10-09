@@ -20,7 +20,7 @@
         "type": "announcement-bar",
         "settings": {
           "text": "Welcome to our store! Free shipping on all orders.",
-          "bg_color": "#2d7a46",
+          "bg_color": "#7c1080",
           "text_color": "#ffffff"
         }
       }
